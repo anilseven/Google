@@ -1,47 +1,119 @@
 body {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-.logo {
-    margin-top: 20px;
-}
-
-.google-yazi { 
-    background-color: rgb(221, 220, 220);
-    width: 1000px;
-    margin: 2px auto;
-    border: 2px solid #ccc;
-    padding: 15px;
-}
+  padding: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
     
-.search-input {
-    width: 400px;
 }
 
-.left{
-    background-color: rgb(120, 241, 235);
-    float: left;
-    width: 344px;
-    height: 105px;
-    margin: 1px;
-    margin-left: 422px;
+/************************************** Üst yazı Bölümü *******************************************/
+nav { 
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px 20px;
+
+}
+.left-nav{
+    display: flex;
+    gap: 20px;
 }
 
-.center{
-    background-color: rgb(120, 241, 235);
-    float: left;
-    width: 344px;
-    height: 105px;
-    margin: 1px;  
+.right-nav{
+    display: flex;
+    gap: 20px;
 }
 
-.right{
-    background-color: rgb(120, 241, 235);
-    width: 344px;
-    float: left;
-    margin: 1px;
-    height: 105px;
+.sign-nav{
+    background-color: aqua;
+    text-decoration: none;
+    width: 70px;       /* Kutunun genişliği */
+    height: 30px;      /* Kutunun yüksekliği */
+    border: 1px solid black; /* Sınır çizgisi görünmesi için */
+    margin-top: 10px;
+  
+    display: flex;           /* Flexbox kullanımı */
+    justify-content: center; /* Yatay ortalar */
+    align-items: center;     /* Dikey ortalar */
+    text-align: center;      /* Yazı çok satırlıysa ortalamak için */
 }
+/************************************** Üst yazı Bölümü *******************************************/
+
+
+
+
+/***************************************** Logo Bölümü **********************************************/
+.logo {
+  display: block;
+  margin: 80px auto 20px auto; /* Üstten boşluk 80px, alttan 20px */
+  max-width: 350px;            /* İsteğe göre ayarlayabilirsin */
+}
+/***************************************** Logo Bölümü **********************************************/
+
+
+/**************************************** Arama kutusu **********************************************/
+.arama-kutu {
+  width: 480px;       /* Sabit genişlik */
+  max-width: 90%;     /* Küçük ekranlarda taşmasın */
+  margin: 0 auto;
+}
+
+.arama-kutu input {
+  width: 100%;        /* Kutunun tam genişliği */
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  outline: none;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+
+.arama-kutu input:focus {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border-color: #4285f4;
+}
+/************************************** arama kutusu boşluk *****************************************/
+
+/* butonlar */
+.buttons {
+  margin-top: 20px;      
+  display: flex;
+  justify-content: center; 
+  gap: 10px;              
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+/* butonlar */
+
+
+ footer {
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px 20px;
+  background-color: #eee;
+  margin-top: 480px;
+
+}
+.left-footer{
+    display: flex;
+    gap: 20px;
+}
+.right-footer{
+    display: flex;
+    gap: 20px;
+} 
